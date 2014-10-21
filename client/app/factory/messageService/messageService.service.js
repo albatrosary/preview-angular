@@ -4,6 +4,7 @@ angular.module('previewAngularApp')
   .factory('messageService', function () {
     // Service logic
     // ...
+    console.log('messageService Starting');
 
     var meaningOfLife = 'messageService';
 

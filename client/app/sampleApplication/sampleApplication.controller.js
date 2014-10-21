@@ -1,11 +1,12 @@
 'use strict';
 
 angular.module('previewAngularApp')
-  .controller('SampleapplicationCtrl', ['$scope', 'sampleApplicationFactory', function ($scope, sampleApplicationFactory) {
-    
-    $scope.message = 'Hello';
+  .controller('SampleapplicationCtrl', ['$scope','sampleApplicationFactory', 'message', 'greeting', 
+  	function ($scope, sampleApplicationFactory, message, greeting) {
+  		
+    console.log('SampleapplicationCtrl Starting');
 
-    console.log($scope.message);
+    console.log(message);
     console.log(sampleApplicationFactory.someMethod());
-    console.log($scope.greeting);
+    console.log(greeting);
   }]);

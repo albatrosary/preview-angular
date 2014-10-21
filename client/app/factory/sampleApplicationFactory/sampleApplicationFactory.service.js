@@ -2,8 +2,8 @@
 
 angular.module('previewAngularApp')
   .factory('sampleApplicationFactory', function () {
-    // Service logic
-    // ...
+
+    console.log('sampleApplicationFactory Starting');
 
     var meaningOfLife = 'sampleApplicationFactory';
 
