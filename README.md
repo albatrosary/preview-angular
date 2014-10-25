@@ -1,21 +1,22 @@
------- 	index.html表示  -------	
-$rootScope $stateChangeStart 				main.controller.js:14
-$rootScope $viewContentLoading 				main.controller.js:31
-messageService Starting 					messageService.service.js:7
-greetingService Starting 					greetingService.service.js:9
-resolve.preprocessing 						sampleApplication.js:44
-$rootScope $viewContentLoading 				main.controller.js:31
-onEnter sampleApplication 					sampleApplication.js:54
-state.controller 							sampleApplication.js:27
-sampleApplicationFactory Starting 			sampleApplicationFactory.service.js:6
-SampleapplicationCtrl Starting 				sampleApplication.controller.js:6
-data.customData1 							sampleApplication.controller.js:7
-messageService 								sampleApplication.controller.js:8
-sampleApplicationFactory 					sampleApplication.controller.js:9
-greetingService 							sampleApplication.controller.js:10
-$rootScope $stateChangeSuccess 				main.controller.js:23
-SampleapplicationCtrl $stateChangeSuccess	sampleApplication.controller.js:23
------- 	SampleapplicationCtrl（画面描画） -------	
+### index.html表示
+1. $rootScope $stateChangeStart 				main.controller.js:14
+2. $rootScope $viewContentLoading 				main.controller.js:31
+3. messageService Starting 					messageService.service.js:7
+4. greetingService Starting 					greetingService.service.js:9
+5. resolve.preprocessing 						sampleApplication.js:44
+6. $rootScope $viewContentLoading 				main.controller.js:31
+7. onEnter sampleApplication 					sampleApplication.js:54
+8. state.controller 							sampleApplication.js:27
+9. sampleApplicationFactory Starting 			sampleApplicationFactory.service.js:6
+10. SampleapplicationCtrl Starting 				sampleApplication.controller.js:6
+11. data.customData1 							sampleApplication.controller.js:7
+12. messageService 								sampleApplication.controller.js:8
+13. sampleApplicationFactory 					sampleApplication.controller.js:9
+14. greetingService 							sampleApplication.controller.js:10
+15. $rootScope $stateChangeSuccess 				main.controller.js:23
+16. SampleapplicationCtrl $stateChangeSuccess	sampleApplication.controller.js:23
+
+### SampleapplicationCtrl（画面描画） -------	
 
 ＊レゾルバで処理成功
 $rootScope $stateChangeStart 				main.controller.js:14
