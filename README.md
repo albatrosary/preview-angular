@@ -19,7 +19,7 @@
 
 ### SampleapplicationCtrl（画面描画）
 
-＊レゾルバで処理成功
+＊resolveで処理成功
 
 17. $rootScope $stateChangeStart 				- main.controller.js:14
 18. SampleapplicationCtrl $stateChangeStart 	- sampleApplication.controller.js:14
@@ -40,7 +40,7 @@
 
 ### SampleapplicationCtrl（画面描画） 
 
-＊レゾルバで処理失敗
+＊resolveで処理失敗
 
 31. ampleapplicationCtrl $stateChangeStart 		- sampleApplication.controller.js:14
 32. SampleapplicationCtrl $viewContentLoading 	- sampleApplication.controller.js:31

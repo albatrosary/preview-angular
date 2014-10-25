@@ -16,7 +16,7 @@ angular.module('previewAngularApp')
       // ページがないとき
       $scope.$on('$stateNotFound', function(event, toState, toParams, fromState, fromParams){ 
         $console.log('SampleapplicationCtrl　$stateNotFound');
-        event.preventDefault(); 
+        // event.preventDefault(); 
       });
       // 成功時
       $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams){
