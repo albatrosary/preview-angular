@@ -13,7 +13,6 @@ angular.module('previewAngularApp')
     // Public API here
     return {
       someMethod: function ($scope, $q, $timeout) {
-        $scope.hoge.hoe
         return meaningOfLife;
       }
     };
