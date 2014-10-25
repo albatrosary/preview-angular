@@ -4,13 +4,16 @@ angular.module('previewAngularApp')
   .factory('greetingService', function () {
     // Service logic
     // ...
-    console.log('greetingService Starting');
 
+
+    console.log('greetingService Starting');
+    console.log();
     var meaningOfLife = 'greetingService';
 
     // Public API here
     return {
-      someMethod: function () {
+      someMethod: function ($scope, $q, $timeout) {
+        $scope.hoge.hoe
         return meaningOfLife;
       }
     };
