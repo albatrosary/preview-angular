@@ -1,5 +1,7 @@
 ### index.html表示
 
+→ 次の画面（SampleapplicationCtrl）をポチる
+
 1. $rootScope $stateChangeStart 				- main.controller.js:14
 2. $rootScope $viewContentLoading 				- main.controller.js:31
 3. messageService Starting 						- messageService.service.js:7
