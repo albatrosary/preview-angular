@@ -11,24 +11,24 @@ angular.module('previewAngularApp')
     });
       // ページ遷移開始
       $rootScope.$on('$stateChangeStart', function(event, toState, toParams, fromState, fromParams){
-      	console.log('$stateChangeStart');
+      	console.log('$rootScope $stateChangeStart');
       });
       // ページがないとき
       $rootScope.$on('$stateNotFound', function(event, toState, toParams, fromState, fromParams){ 
-        $console.log('stateNotFound');
+        $console.log('$rootScope stateNotFound');
         event.preventDefault(); 
       });
       // 成功時
       $rootScope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams){
-      	console.log('$stateChangeSuccess');
+      	console.log('$rootScope $stateChangeSuccess');
       });
       // エラー時
       $rootScope.$on('$stateChangeError', function(event, toState, toParams, fromState, fromParams){
-        console.log('$stateChangeError');
+        console.log('$rootScope $stateChangeError');
       });
       // viewがロードされる前に発火
       $rootScope.$on('$viewContentLoading', function(event, toState, toParams, fromState, fromParams){
-        console.log('$viewContentLoading');
+        console.log('$rootScope $viewContentLoading');
       });
 
   });

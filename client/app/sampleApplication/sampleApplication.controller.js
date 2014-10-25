@@ -1,15 +1,15 @@
 'use strict';
 
 angular.module('previewAngularApp')
-  .controller('SampleapplicationCtrl', ['$scope','$state','$rootScope','sampleApplicationFactory', 'message', 'greeting', 
-  	function ($scope, $state,$rootScope,sampleApplicationFactory, message, greeting) {
+  .controller('SampleapplicationCtrl', ['$scope','$state','sampleApplicationFactory', 'message', 'greeting', 
+  	function ($scope, $state, sampleApplicationFactory, message, greeting) {
   	  console.log('SampleapplicationCtrl Starting');
   	  console.log($state.current.data.customData1)
       console.log(message);
       console.log(sampleApplicationFactory.someMethod());
       console.log(greeting);
 
-            // ページ遷移開始
+      // ページ遷移開始
       $scope.$on('$stateChangeStart', function(event, toState, toParams, fromState, fromParams){
       	console.log('SampleapplicationCtrl $stateChangeStart');
       });
@@ -25,6 +25,7 @@ angular.module('previewAngularApp')
       // エラー時
       $scope.$on('$stateChangeError', function(event, toState, toParams, fromState, fromParams){
         console.log('SampleapplicationCtrl $stateChangeError');
+        $scope.errormessage = "何かエラー";
       });
       // viewがロードされる前に発火
       $scope.$on('$viewContentLoading', function(event, toState, toParams, fromState, fromParams){

@@ -18,6 +18,8 @@ angular.module('previewAngularApp')
         resolve: {
           message: function(){
           	console.log('resolve nextApplication');
+          	var a;
+          	a.b.c = 1;
             return 'resolve nextApplication';
           }
         },
