@@ -8,7 +8,10 @@
  *  (4) インジェクションしたファクトリーの実行
  *  (5) コントローラーの実行
  *  (6) 画面上の処理
- *  (7) onExitの実行 <- 画面を抜けるときに実行
+ *  (7) 次の画面のリゾルバ開始
+ *  (8) onExitの実行 <- 画面を抜けるときに実行
+ *      ただし、リゾルバでエラーがあってもonExitは事項される
+ *  (9) 次の画面のonEnterの実行
  * を行う。
  * カスタムdataを定義するとコントローラーで呼び出しが行える
  *  stateの内容は
@@ -48,11 +51,11 @@ angular.module('previewAngularApp')
         },
         onEnter: function(preprocessing){
           // 処理はファクトリを定義してリゾルバへ定義、良い出すことで処理が実行される
-          console.log('onEnter');
+          console.log('onEnter sampleApplication');
         },
         onExit: function(){
           // controller？templateUrl?を離れるときに実行される
-          console.log('onExit');
+          console.log('onExit sampleApplication');
         }
       });
   });
