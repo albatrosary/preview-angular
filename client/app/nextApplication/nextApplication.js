@@ -22,8 +22,6 @@ angular.module('previewAngularApp')
           }
         },
         onEnter: function(){
-          var a;
-          a.b.c = 1;
           console.log('onEnter nextApplication');
         },
         onExit: function(){
