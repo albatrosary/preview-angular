@@ -50,11 +50,9 @@ angular.module('previewAngularApp')
           customData2: "red"
         },
         onEnter: function(preprocessing){
-          // 処理はファクトリを定義してリゾルバへ定義、良い出すことで処理が実行される
           console.log('onEnter sampleApplication');
         },
         onExit: function(){
-          // controller？templateUrl?を離れるときに実行される
           console.log('onExit sampleApplication');
         }
       });

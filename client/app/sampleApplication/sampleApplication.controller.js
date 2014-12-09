@@ -15,7 +15,7 @@ angular.module('previewAngularApp')
       });
       // ページがないとき
       $scope.$on('$stateNotFound', function(event, toState, toParams, fromState, fromParams){ 
-        $console.log('SampleapplicationCtrl　$stateNotFound');
+        console.log('SampleapplicationCtrl　$stateNotFound');
         // event.preventDefault(); 
       });
       // 成功時
